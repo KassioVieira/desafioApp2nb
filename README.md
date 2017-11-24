@@ -1,2 +1,2 @@
-# desafioApp2nb
+# Desafio App 2NB
 Desenvolver um aplicativo em Ionic na versão mais atualizada, que consulta esta API https://jsonplaceholder.typicode.com/todos e mostra as tarefas na tela principal mostrando se a tarefa foi realizada ou não. ● Elas terão de ser mostradas em cards que serão componentes externos da página, ou seja, deverá ser importado no módulo da mesma. O componente deverá mostrar o título da tarefa e o id do usuário. ● Na página principal deverá ter uma maneira de filtrar por usuário.
