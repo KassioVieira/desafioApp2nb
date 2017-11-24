@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Tarefas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+ 
+  <ion-list>
+    <ion-item-sliding *ngFor="let t of tasks">
+      <ion-item style="margin-top:10px">
+        <ion-avatar item-start>
+            <img  src="assets/imgs/checked-symbol.svg" *ngIf="t.completed == true">
+            <img  src="assets/imgs/close-browser.svg" *ngIf="t.completed == false">
+        </ion-avatar>
+        <h3>Tarefa</h3>
+        <p>{{ t.title }}</p>
+    
+        <hr>
+
+        <h3>Status</h3>
+        <p *ngIf="t.completed == true">Realizada</p>
+        <p *ngIf="t.completed == false">Não realizada</p>
+      </ion-item>
+
+    </ion-item-sliding>
+ 
+  </ion-list>
+</ion-content>
